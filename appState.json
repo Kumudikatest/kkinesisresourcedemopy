@@ -1,0 +1,101 @@
+{
+  "EDITOR_STATE": {
+    "allProjectFiles": {
+      "955eade3-0cec-4f36-90e7-75852900ec6c": {
+        "id": "955eade3-0cec-4f36-90e7-75852900ec6c",
+        "parent": null,
+        "name": "kkinesisresourcedemopy.py",
+        "type": "PYTHON_LAMBDA",
+        "isDirectory": false,
+        "children": [],
+        "isRemovable": true,
+        "filePath": "kkinesisresourcedemopy.py",
+        "cursor": {
+          "lineNumber": 12,
+          "column": 17
+        },
+        "config": {
+          "runtime": "python3.8",
+          "handler": "handler",
+          "timeout": 60,
+          "memory": 128,
+          "layers": [],
+          "name": "kkinesisresourcedemopy"
+        },
+        "triggers": [],
+        "lastUpdated": 1604387973470,
+        "testCases": {
+          "05c58e6a-1b9e-4644-b902-96fb9f5d3a11": {
+            "id": "05c58e6a-1b9e-4644-b902-96fb9f5d3a11",
+            "name": "Test event",
+            "functionId": "955eade3-0cec-4f36-90e7-75852900ec6c",
+            "event": "{\"key1\": \"value1\", \"key2\": \"value2\", \"key3\": \"value3\"}",
+            "eventTemplate": "hello-world"
+          }
+        }
+      }
+    },
+    "openFiles": [
+      "955eade3-0cec-4f36-90e7-75852900ec6c"
+    ],
+    "currentFileId": "955eade3-0cec-4f36-90e7-75852900ec6c",
+    "resources": {
+      "kinesiskdemo": {
+        "name": "kinesiskdemo",
+        "type": "Kinesis",
+        "config": {
+          "mode": 0,
+          "StreamName": "kdemo",
+          "shards": 1,
+          "region": "us-east-1",
+          "operation": "describeStream"
+        }
+      }
+    },
+    "customTemplate": {
+      "syntax": "JSON",
+      "overrideDefault": false,
+      "dialect": null,
+      "definitions": null
+    },
+    "envVariables": [
+      {
+        "lambdaId": "all",
+        "varKey": "SIGMA_AWS_ACC_ID",
+        "varValue": null,
+        "shouldPersist": false,
+        "displayOnly": false,
+        "editable": false
+      }
+    ],
+    "packageJSON": {
+      "dependencies": {
+        "boto3": {
+          "name": "boto3",
+          "language": "python",
+          "version": "1.12.27",
+          "dev": true,
+          "notRemovable": false
+        }
+      }
+    }
+  },
+  "PROJECT_META": {
+    "sigmaVersion": "1.4.5",
+    "projectName": "kkinesisresourcedemopy",
+    "projectDescription": "",
+    "projectVersion": "1.0.0",
+    "projectRegion": "us-east-1",
+    "platform": "AWS",
+    "language": "python",
+    "platformRegions": {},
+    "lastSave": 1604388334629
+  },
+  "VCS_STATE": {
+    "provider": "GitHub",
+    "repo": {
+      "name": "kkinesisresourcedemopy",
+      "url": "https://github.com/Kumudikatest/kkinesisresourcedemopy"
+    }
+  }
+}
